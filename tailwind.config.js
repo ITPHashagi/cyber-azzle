@@ -5,6 +5,9 @@ module.exports = {
     extend: {
       fontFamily:{
         "dmSans" : ["DM Sans", "sans-serif"]
+      },
+      textColor:{
+        "OrangRed" : "rgb(254 51 10 / var(--tw-text-opacity))"
       }
     },
   },
