@@ -8,6 +8,9 @@ module.exports = {
       },
       textColor:{
         "OrangRed" : "rgb(254 51 10 / var(--tw-text-opacity))"
+      },
+      width:{
+        350: "350px"
       }
     },
   },
