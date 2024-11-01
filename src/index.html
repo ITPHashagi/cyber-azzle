@@ -19,9 +19,20 @@
       rel="stylesheet"
     />
 
+    <!-- Link Animation -->       
+    <link id="jos-stylesheet" rel="stylesheet" href="https://unpkg.com/jos-animation/dist/jos.css" crossorigin="anonymous" />
+  
+    <!-- SLICK -->
+    <link rel="stylesheet" href="./libs/slick/slick.css" />
+    <link rel="stylesheet" href="./libs/slick/slick-theme.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
     <!-- Link css -->
     <link rel="stylesheet" href="./css/style.css" />
-
     <link rel="stylesheet" href="./css/output.css" />
   </head>
   <body>
@@ -123,11 +134,77 @@
       </header>
 
       <!-- MAIN -->
-      <main class="main-wrapper relative overflow-hidden"></main>
+      <main class="main-wrapper relative overflow-hidden">
+        <section id="section-top">
+          <!-- WRAPPER -->
+          <div class="relative z-[1] overflow-hidden rounded-bl-[30px] rounded-br-[30px] bg-colorLinenRuffle pb-20 pt-28 lg:rounded-bl-[50px] lg:rounded-br-[50px] lg:pb-[24px] lg:pt-[32px] xl:pt-[40] xxl:pb-[133px] xxl:pt-[195px]">
+            <div class="global-container">
+              <div class="title flex flex-col items-center text-center lg:mb-20 mb-14">
+                <h1 class="mb-6 max-w-[510px] lg:max-w-[786px] xl:max-w-[1076px] text-8xl font-bold">Simplify your SaaS solution with AI</h1>
+                <p class="mb-11 max-w-[700px] text-lg font-semibold sm:text-xl xl:max-w-[980px] ">Our AI SAAS tool is a cloud-based software delivery model. It helps businesses forecast demand for products and services and optimize inventory management and supply chain operations.</p>
+                <!-- Create 2 button -->
+                <div class="flex flex-wrap justify-center gap-6 jos" data-jos_animation="fade" data-jos_once="1" data-jos_counter="1" data-jos_scrolldirection="down">
+                  <a href="#" class="button rounded-[50px] border-2 border-black bg-black text-white  py-4 after:bg-OrangRed hover:border-OrangeRed hover:text-white font-bold">Get started for free</a>
+                  <a href="#" class="button rounded-[50px] border-2 border-black  text-black py-4 after:bg-OrangRed hover:border-OrangeRed hover:text-white font-bold">Learn more</a>
+                </div>
+              </div>
+              <!-- IMAGE TOP CONTENT -->
+              <div class="top-img overflow-hidden rounded-2xl bg-black jos">
+                <img src="img/theme-1/hero-dashboard.jpg" alt="dashboard" width="1296" height="640" class="h-auto w-full">
+              </div>
+              <!-- HR -->
+               <div class="my-10 h-[1px] w-full bg-[#DBD6CF] lg:my-16 xl:my-20"></div>
+              <!-- TEXT ... -->
+                <div class="mx-auto text-center mb-12 lg:mb-16 jos">
+                  <p class="text-lg">Companies of all sizes trust us to find AI SaaS critical to their growth and innovation</p>
+                </div>
+              <!-- slider brand -->
+              <div class="slick-slider">
+                <div class="list-item">
+                  <div class="item">
+                    <img src="img/theme-1/brand-1.png" alt="brand-1" width="180" height="38" class="max-w-full">
+                  </div>
+                  <div class="item">
+                    <img src="img/theme-1/brand-2.png" alt="brand-2" width="180" height="38" class="max-w-full">
+                  </div>
+                  <div class="item">
+                    <img src="img/theme-1/brand-3.png" alt="brand-3" width="180" height="38" class="max-w-full">
+                  </div>
+                  <div class="item">
+                    <img src="img/theme-1/brand-4.png" alt="brand-4" width="180" height="38" class="max-w-full">
+                  </div>
+                  <div class="item">
+                    <img src="img/theme-1/brand-5.png" alt="brand-5" width="180" height="38" class="max-w-full">
+                  </div>
+                  <div class="item">
+                    <img src="img/theme-1/brand-1.png" alt="brand-6" width="180" height="38" class="max-w-full">
+                  </div>
+                  <div class="item">
+                    <img src="img/theme-1/brand-2.png" alt="brand-7" width="180" height="38" class="max-w-full">
+                  </div>
+                  <div class="item">
+                    <img src="img/theme-1/brand-3.png" alt="brand-8" width="180" height="38" class="max-w-full">
+                  </div>
+                  <div class="item">
+                    <img src="img/theme-1/brand-4.png" alt="brand-9" width="180" height="38" class="max-w-full">
+                  </div>
+                  <div class="item">
+                    <img src="img/theme-1/brand-5.png" alt="brand-10" width="180" height="38" class="max-w-full">
+                  </div>
+                </div>
+              </div>
+              <!-- Background Shape -->
+              <div class="orange-gradient-1 absolute -right-[150px] top-[370px] -z-[1] h-[500px] w-[500px] rounded-[500px]"></div>
+              <div class="orange-gradient-2 absolute right-[57px] top-[620px] -z-[1] h-[450px] w-[450px] rounded-[450px]"></div>
+            </div>
+          </div>
+        </section>
+
+      </main>
       <!-- FOOTER -->
       <!-- Tạm đóng footer -->
       <footer
-        class="relative z-[0] -mt-[500px] overflow-hidden rounded-tr[30px] rounded-tl-[30px] bg-colorLinenRuffle lg:rounded-tl-[50px] lg:rounded-tr-[50px]"
+        class="relative z-[0] mt-[500px] overflow-hidden rounded-tr[30px] rounded-tl-[30px] bg-colorLinenRuffle lg:rounded-tl-[50px] lg:rounded-tr-[50px]"
       >
         <!-- TOP -->
         <div class="py-[60px] xl:pb-[100px] xl:pt-[130px]">
@@ -319,6 +396,33 @@
     </div>
 
     <!-- SCRIPT -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- SLICK SLIDER -->
+    <script type="text/javascript" src="./libs/slick/slick.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".list-item").slick({
+          infinite: true,
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          arrows: false,
+          dots: false,
+          autoplay:true,
+          autoplaySpeed: 2000,
+        });
+      });
+    </script>
+    <!-- SCRIPT ANIMATION --> 
+    <script src="https://unpkg.com/jos-animation/dist/jos.min.js"></script>
+    <script> JOS.init(); </script>
+    
+
+    
 
     <!-- Flowbite -->
     <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
