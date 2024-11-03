@@ -1822,6 +1822,10 @@ input:checked + .toggle-bg {
   transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
+.ease-in {
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
 .after\:bg-OrangRed::after {
   content: var(--tw-content);
   background-color: rgb(254 51 10 / var(--tw-text-opacity));
