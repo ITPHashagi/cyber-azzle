@@ -391,6 +391,9 @@ textarea::placeholder {
   color: #9ca3af;
   /* 2 */
 }
+.list-item{
+  list-style: none !important;
+}
 
 /*
 Set the default cursor for buttons.
