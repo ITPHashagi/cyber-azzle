@@ -32,6 +32,7 @@
     />
 
     <!-- Link css -->
+    <link rel="stylesheet" href="./css/menu.css">
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/output.css" />
   </head>
@@ -40,105 +41,127 @@
       <!-- HEADER -->
       <header class="site-header site-header--absolute is--white py-3">
         <div class="global-container">
-          <nav class="bg-white border-gray-200 dark:bg-gray-900">
-            <div
-              class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4"
-            >
-              <a
-                href="index.html"
-                class="flex items-center space-x-3 rtl:space-x-reverse"
-              >
-                <img src="img/logo-dark.png" class="h-8" alt="azzle Logo" />
-              </a>
-              <div
-                class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse"
-              >
-                <button
-                  type="button"
-                  class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                >
-                  Get started
-                </button>
-                <button
-                  type="button"
-                  class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                >
-                  Get started
-                </button>
-                <button
-                  data-collapse-toggle="navbar-cta"
-                  type="button"
-                  class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                  aria-controls="navbar-cta"
-                  aria-expanded="false"
-                >
-                  <span class="sr-only">Open main menu</span>
-                  <svg
-                    class="w-5 h-5"
-                    aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 17 14"
-                  >
-                    <path
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M1 1h15M1 7h15M1 13h15"
-                    />
-                  </svg>
-                </button>
-              </div>
-              <div
-                class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
-                id="navbar-cta"
-              >
-                <ul
-                  class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700"
-                >
-                  <li>
-                    <a
-                      href="#"
-                      class="block py-2 px-3 md:p-0 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:dark:text-blue-500"
-                      aria-current="page"
-                      >Home</a
-                    >
+          <div class="flex items-center justify-between gap-x-8">
+            <a href="#">
+              <img src="img/logo-dark.png" alt="logo" width="96" height="24">
+            </a>
+            <div class="menu-block-wrapper">
+              <div class="menu-overlay"></div>
+              <nav class="menu-block">
+                <div class="mobile-menu-head">
+                  <div class="go-back">
+                    <img src="https://azzle.netlify.app/assets/img/icon-black-long-arrow-right.svg" alt="cheveron-right" width="16" height="16">
+                  </div>
+                  <div class="current-menu-title"></div>
+                  <div class="mobile-menu-close">×</div>
+                </div>
+                <ul class="site-menu-main">
+                  <li class="nav-item nav-item-has-children">
+                    <a href="#" class="nav-link-item drop-trigger">
+                      Demo
+                      <img class="dropdown-icon" src="https://azzle.netlify.app/assets/img/icon-black-cheveron-right.svg" alt="cheveron-right" width="16" height="16">
+                    </a>
+                    <ul class="sub-menu" id="submenu-1">
+                      <li class="sub-menu--item"><a href="#">Home 1</a></li>
+                      <li class="sub-menu--item"><a href="#">Home 2</a></li>
+                      <li class="sub-menu--item"><a href="#">Home 3</a></li>
+                      <li class="sub-menu--item"><a href="#">Home 4</a></li>
+                    </ul>
                   </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                      >About</a
-                    >
+                  <li class="nav-item"><a href="#" class="nav-link-item">About</a></li>
+                  <li class="nav-item nav-item-has-children">
+                    <a href="#" class="nav-link-item drop-trigger">
+                      Services
+                      <img class="dropdown-icon" src="https://azzle.netlify.app/assets/img/icon-black-cheveron-right.svg" alt="cheveron-right" width="16" height="16">
+                    </a>
+                    <ul class="sub-menu" id="submenu-2">
+                      <li class="sub-menu--item"><a href="#">Service</a></li>
+                      <li class="sub-menu--item"><a href="#">Service Details</a></li>
+                    </ul>
                   </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                      >Services</a
-                    >
+                  <li class="nav-item nav-item-has-children">
+                    <a href="#" class="nav-link-item drop-trigger">
+                      Pages
+                      <img class="dropdown-icon" src="https://azzle.netlify.app/assets/img/icon-black-cheveron-right.svg" alt="cheveron-right" width="16" height="16">
+                    </a>
+                    <ul class="sub-menu" id="submenu-3">
+                      <li class="sub-menu--item nav-item-has-children">
+                        <a href="#">
+                          blogs
+                          <img class="dropdown-icon" src="https://azzle.netlify.app/assets/img/icon-black-cheveron-right.svg" alt="cheveron-right" width="16" height="16">
+                        </a>
+                        <ul class="sub-menu shape-none">
+                          <li class="sub-menu--item"><a href="#">blogs</a></li>
+                          <li class="sub-menu--item"><a href="#">Blog Details</a></li>
+                        </ul>
+
+                      </li>
+                      <li class="sub-menu--item nav-item-has-children">
+                        <a href="#">
+                          Team
+                          <img class="dropdown-icon" src="https://azzle.netlify.app/assets/img/icon-black-cheveron-right.svg" alt="cheveron-right" width="16" height="16">
+                        </a>
+                        <ul class="sub-menu shape-none">
+                          <li class="sub-menu--item"><a href="#">team</a></li>
+                          <li class="sub-menu--item"><a href="#">team details</a></li>
+                        </ul>
+                      </li>
+                      <li class="sub-menu--item nav-item-has-children">
+                        <a href="#">
+                          FAQ
+                          <img class="dropdown-icon" src="https://azzle.netlify.app/assets/img/icon-black-cheveron-right.svg" alt="cheveron-right" width="16" height="16">
+                        </a>
+                        <ul class="sub-menu shape-none">
+                          <li class="sub-menu--item"><a href="#">FAQ-1</a></li>
+                          <li class="sub-menu--item"><a href="#">FAQ-2</a></li>
+                        </ul>
+                      </li>
+                      <li class="sub-menu--item nav-item-has-children">
+                        <a href="#">
+                          portfolio
+                          <img class="dropdown-icon" src="https://azzle.netlify.app/assets/img/icon-black-cheveron-right.svg" alt="cheveron-right" width="16" height="16">
+                        </a>
+                        <ul class="sub-menu shape-none">
+                          <li class="sub-menu--item"><a href="#">portfolio</a></li>
+                          <li class="sub-menu--item"><a href="#">portfolio details</a></li>
+                        </ul>
+                      </li>
+                      <li class="sub-menu--item">
+                        <a href="#">
+                          pricing
+                        </a>
+                      </li>
+                      <li class="sub-menu--item nav-item-has-children">
+                        <a href="#">
+                          Utility
+                          <img class="dropdown-icon" src="https://azzle.netlify.app/assets/img/icon-black-cheveron-right.svg" alt="cheveron-right" width="16" height="16">
+                        </a>
+                        <ul class="sub-menu shape-none">
+                          <li class="sub-menu--item"><a href="#">error 404</a></li>
+                          <li class="sub-menu--item"><a href="#">Login</a></li>
+                          <li class="sub-menu--item"><a href="#">Signup</a></li>
+                          <li class="sub-menu--item"><a href="#">reset password</a></li>
+                        </ul>
+                      </li>
+                    </ul>
                   </li>
-                  <li>
-                    <a
-                      href="#"
-                      class="block py-2 px-3 md:p-0 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
-                      >Contact</a
-                    >
-                  </li>
+                  <li class="nav-item"><a href="#" class="nav-link-item">Contact</a></li>
                 </ul>
-              </div>
+              </nav>
             </div>
-          </nav>
+            <div class="flex items-center gap-6">
+              <a href="#" class="button rounded-[50px] border-2 border-black bg-black text-white  py-6 after:bg-OrangRed hover:border-OrangeRed hover:text-white font-bold">Login</a>
+              <a href="#" class="button rounded-[50px] border-2 border-black  text-black py-6 after:bg-OrangRed hover:border-OrangeRed hover:text-white font-bold">Signup Free</a>
+            </div>
+          </div>
         </div>
       </header>
-
       <!-- MAIN -->
       <main class="main-wrapper relative overflow-hidden">
         <!-- SECTION-TOP -->
         <section id="section-top">
           <!-- WRAPPER -->
-          <div class="relative z-[1] overflow-hidden rounded-bl-[30px] rounded-br-[30px] bg-colorLinenRuffle pb-20 lg:rounded-bl-[50px] lg:rounded-br-[50px] lg:pt-[32px] pt-40 xxl:pb-[133px] xxl:pt-[195px]">
+          <div class="relative z-[1] overflow-hidden rounded-bl-[30px] rounded-br-[30px] bg-colorLinenRuffle pb-20 lg:rounded-bl-[50px] lg:rounded-br-[50px] lg:pt-40 xxl:pb-[133px] 2xl:pt-[195px]">
             <div class="global-container">
               <div class="title flex flex-col items-center text-center lg:mb-20 mb-14">
                 <h1 class="mb-6 max-w-[510px] lg:max-w-[786px] xl:max-w-[1076px] text-8xl font-bold">Simplify your SaaS solution with AI</h1>
@@ -314,11 +337,11 @@
                 <!-- GRID -->
                  <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-12 lg:gap-20 xl:grid-cols-[minmax(0,_1.2fr)_1fr] xl:gap-28 2xl:gap-32">
                   <!-- IMG -->
-                    <div class="order-1 overflow-hidden rounded-md jos">
+                    <div class="order-2 overflow-hidden rounded-md jos">
                       <img src="img/theme-1/content-image-2.jpg" alt="content-image-2" width="526" height="450" class="h-auto w-full">
                     </div>
                   <!-- TITLE -->
-                    <div class="title order-2 jos">
+                    <div class="title order-1 jos">
                       <div class="mb-6">
                         <h2>Providing quick deploy solutions</h2>
                       </div>
@@ -414,8 +437,8 @@
                   <!-- BUTTON -->
                   <div class="flex justify-center">
                     <div class="inline-flex space-x-4 rounded-[50px] border-2 border-black font-semibold">
-                      <button class="price-button active" data-tab="monthly">Monthly</button>
-                      <button class="price-button" data-tab="annually">Annually</button>
+                      <button class="tab-button price-button active" data-tab="monthly">Monthly</button>
+                      <button class="tab-button price-button" data-tab="annually">Annually</button>
                     </div>
                   </div>
                   <!-- PRICING BLOCK -->
@@ -909,6 +932,7 @@
     </div>
 
     <!-- SCRIPT -->
+    <script src="libs/main.js"></script>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
       integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
@@ -930,10 +954,14 @@
         });
       });
     </script>
+
     <!-- SCRIPT ANIMATION JOS --> 
     <script src="https://unpkg.com/jos-animation/dist/jos.min.js"></script>
+    <script src="libs/jos.min.js"></script>
     <script> JOS.init(); </script>
     
+    <!-- MENU -->
+     <script src="libs/menu.js"></script>
 
     <!-- SCRIPT WAYPOINT -->
     <script
