@@ -437,14 +437,14 @@
                   <!-- BUTTON -->
                   <div class="flex justify-center">
                     <div class="inline-flex space-x-4 rounded-[50px] border-2 border-black font-semibold">
-                      <button class="tab-button price-button active" data-tab="monthly">Monthly</button>
-                      <button class="tab-button price-button" data-tab="annually">Annually</button>
+                      <button id="btnMonthly" class="tab-button price-button active" data-tab="monthly">Monthly</button>
+                      <button id="btnAnnually" class="tab-button price-button" data-tab="annually">Annually</button>
                     </div>
                   </div>
                   <!-- PRICING BLOCK -->
                   <div class="mt-12 lg:mt-16 xl:mt-20">
                     <!-- GRID MONTHLY-->
-                    <ul id="monthly" class="grid grid-cols-1 gap-x-6 md:grid-cols-2 2xl:grid-cols-3">
+                    <ul id="monthly" class="tab-content grid grid-cols-1 gap-x-6 md:grid-cols-2 2xl:grid-cols-3">
                       <!-- BEGINNER -->
                       <li class="group flex flex-col rounded-[10px] bg-colorLinenRuffle p-10 transition-all duration-300 ease-linear hover:bg-black jos">
                         <h3 class="font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">Beginner</h3>
@@ -485,7 +485,7 @@
                     </ul>
 
                     <!-- GRID ANNUALLY-->
-                    <ul id="annually" class="grid hidden grid-cols-1 gap-x-6 md:grid-cols-2 2xl:grid-cols-3">
+                    <ul id="annually" class="tab-content grid grid-cols-1 gap-x-6 md:grid-cols-2 2xl:grid-cols-3 hidden">
                       <!-- BEGINNER -->
                       <li class="group flex flex-col rounded-[10px] bg-colorLinenRuffle p-10 transition-all duration-300 ease-linear hover:bg-black jos">
                         <h3 class="font-dmSans text-[28px] font-bold leading-[1.28] tracking-tighter text-black transition-all duration-300 ease-linear group-hover:text-white">Beginner</h3>
@@ -521,8 +521,6 @@
                         <p class="mb-10 text-lg text-black transition-all duration-300 ease-linear group-hover:text-white ">Ideal for handling complicated projects enterprise-level projects, and websites.</p>
                         <a href="#" class="button mt-auto block rounded-[50px] border-2 border-black bg-transparent py-4 text-center text-black transition-all duration-300 ease-linear after:bg-OrangRed hover:border-OrangeRed hover:text-black group-hover:border-OrangeRed group-hover:text-white ">Choose the plant</a>
                       </li>
-                      
-                      
                     </ul>
                   </div>
                 </div>
